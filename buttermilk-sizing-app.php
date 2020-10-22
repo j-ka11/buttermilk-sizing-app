@@ -1,9 +1,8 @@
 <?php
 /**
-* Plugin Name: Buttermilk
+* Plugin Name: buttermilk
 * Description: This is the plugin that implements buttermilk's sizing app.
 * Author: Joshua Kall
 **/
-add_action('wp_body_open', function() {
-   echo '<h1>hello!!!</h1>';
-});
+
+require_once plugin_dir_path(__FILE__) . 'includes/loader.php';
