@@ -5,29 +5,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div class="buttermilk sizing-app">
-    <div class="buttermilk content">
-        <span class="buttermilk close">&times;</span>
-        <div class="buttermilk wrapper">
+<div class="buttermilk buttermilk-modal">
+    <div class="buttermilk-modal-content">
+        <span class="buttermilk-close">&times;</span>
+        <?php
 
-            <div class="buttermilk mannequin-container">
-                <p>Hi i'm mannequin</p>
-            </div>
+        do_action( 'buttermilk_sizing_app' );
 
-            <div class="buttermilk controller-container">
-                <div class="buttermilk controller-frame">
-                    <p>Hi i'm controller</p>
-
-                    <?php
-
-                    do_action( 'buttermilk_get_controller' );
-
-                    ?>
-
-                </div>
-            </div>
-
-        </div>
+        ?>
     </div>
 </div>
 <?php

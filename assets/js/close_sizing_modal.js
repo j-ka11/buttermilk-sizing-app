@@ -4,8 +4,8 @@ function docReady(fn) {
 
 ( function() {
     docReady( function() {
-        var modal = document.querySelector( '.buttermilk.sizing-app' );
-        var btn = document.querySelector( '.buttermilk .close' );
+        var modal = document.querySelector( '.buttermilk-modal' );
+        var btn = document.querySelector( '.buttermilk-close' );
         btn.onclick= function() {
             modal.style.display = "none";
         }
