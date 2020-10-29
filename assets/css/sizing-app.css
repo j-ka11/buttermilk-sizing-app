@@ -1,0 +1,19 @@
+.wrapper {
+    display: block;
+}
+
+.mannequin-container {
+    position: relative;
+    display: block;
+    float: left;
+    left: 20%;
+    background-color: #0a4b78;
+}
+
+.controller-container {
+    position: relative;
+    display: block;
+    float: right;
+    right: 20%;
+    background-color: #1bd760;
+}
