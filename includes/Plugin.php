@@ -2,6 +2,8 @@
 
 namespace buttermilk;
 
+use buttermilk\Core\Gamified\Controller;
+
 class Plugin {
 
     private static $instance = null;
@@ -34,12 +36,6 @@ class Plugin {
                 $this->load_sizing_app();
             }
         );
-        add_action(
-            'buttermilk_get_controller',
-            function() {
-                $this->get_controller();
-            }
-        );
     }
 
     public static function load() {
@@ -49,6 +45,8 @@ class Plugin {
 
         static::$instance = new static();
         static::$instance->register();
+
+        require_once dirname( constant( 'BUTTERMILK_PLUGIN_MAIN_FILE' ) ) . '/includes/Core/Gamified/load_gamified.php';
 
         return true;
     }
@@ -78,10 +76,6 @@ class Plugin {
                 $this->categories[] = $cat_term->name;
             }
         }
-    }
-
-    public function get_controller() {
-        require_once dirname( constant( 'BUTTERMILK_PLUGIN_MAIN_FILE' ) ) . '/templates/sizing-controller.php';
     }
 
 }
