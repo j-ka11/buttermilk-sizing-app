@@ -18,7 +18,7 @@ class Plugin {
             function() {
                 wp_enqueue_style( 'buttermilk-sizing-modal-style', '/wp-content/plugins/buttermilk-sizing-app/assets/css/sizing-modal.css' );
                 wp_enqueue_style( 'buttermilk-sizing-app-style', '/wp-content/plugins/buttermilk-sizing-app/assets/css/sizing-app.css' );
-                wp_enqueue_style( 'buttermilk-sizing-controller-style', '/wp-content/plugins/buttermilk-sizing-app/assets/css/sizing-controller.css' );
+
                 wp_enqueue_script( 'buttermilk-sizing-modal-script', '/wp-content/plugins/buttermilk-sizing-app/assets/js/close_sizing_modal.js' );
             }
         );

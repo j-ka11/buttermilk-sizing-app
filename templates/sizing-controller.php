@@ -22,9 +22,16 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
     </div>
 </div>
-<div class="sizing-slider">
-    <div class="sizing-slider-content">
+<div class="sizing-input">
+    <div class="sizing-input-title">
         <h2>How would you classify your torso?</h2>
+    </div>
+    <div class="sizing-slider">
+        <?php
+
+        do_action( 'buttermilk-get-slider' );
+
+        ?>
     </div>
 </div>
 <?php
