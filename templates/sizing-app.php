@@ -8,7 +8,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="buttermilk-sizing-app">
 
     <div class="buttermilk-mannequin-container">
-        <p>Hi i'm mannequin</p>
+        <?php
+
+        do_action( 'buttermilk_get_model' );
+
+        ?>
     </div>
 
     <div class="buttermilk-controller-container">
