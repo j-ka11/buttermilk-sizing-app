@@ -8,6 +8,12 @@ class Slider {
 
     public function register() {
         add_action(
+            'wp_enqueue_scripts',
+            function() {
+                wp_enqueue_script( 'buttermilk-sizing-slider-script', '/wp-content/plugins/buttermilk-sizing-app/assets/js/sizing-slider.js' );
+            }
+        );
+        add_action(
             'buttermilk-get-slider',
             function() {
                 $this->get_slider();

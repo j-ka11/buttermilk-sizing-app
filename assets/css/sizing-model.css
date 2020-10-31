@@ -1,14 +1,14 @@
 .model-front {
     position: relative;
     float: left;
-    width: 60%;
+    width: 50%;
     height: 100%;
 }
 
 .model-side {
     position: relative;
     float: right;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
