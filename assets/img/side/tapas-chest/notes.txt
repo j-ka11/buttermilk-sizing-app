@@ -1,0 +1,1 @@
+No image for very small or small tapas-chest measurements and display is set to none.
