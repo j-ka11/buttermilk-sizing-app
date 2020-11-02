@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="buttermilk-mannequin-container">
         <?php
 
-        do_action( 'buttermilk_get_model' );
+        do_action( 'buttermilk_load_model' );
 
         ?>
     </div>
